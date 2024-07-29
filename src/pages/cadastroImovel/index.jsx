@@ -2,7 +2,7 @@ import Header from "../../components/header"
 import BackAlert from "../../components/backAlert"
 import { useState } from "react"
 import styles from './cadastroImovel.module.css'
-import FormCadastroImovel from "../../forms"
+import FormCadastroImovel from "../../forms/form1CadastroImovel"
 import NextForm from "../../components/nextForm"
 const textBackAlert = 'Deseja abandonar o cadastro do imóvel? Esta operação não será salva.'
 

@@ -4,7 +4,7 @@ function NextForm() {
         <>
             <div className={styles.container}>
              
-                    <button className={styles.buttonPurple}>Continuar</button>
+                   <div className={styles.button_container}> <button className={styles.buttonPurple}>Continuar</button></div>
              
 
                 <div className={styles.row}>

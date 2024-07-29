@@ -13,7 +13,7 @@ function Header({ clickBack, children }) {
         <div>
             <header className={styles.header}>
                 <button className={styles.button} onClick={showModal}>
-                    <img src={ArrowBack} alt="arrow" />
+                    <img  src={ArrowBack} alt="arrow" />
                 </button>
                 {children}
             </header>

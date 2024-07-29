@@ -1,8 +1,23 @@
-import CepInput from '../components/inputCep'
+import CepInput from '../../components/inputCep'
+import TextArea from '../../components/textArea'
 import styles from './formCadastroImovel.module.css'
-
+import { useState } from 'react';
 
 function FormCadastroImovel() {
+    const [cep, setCep] = useState('');
+    const [address, setAddress] = useState({
+        city: '',
+        street: '',
+        neighborhood: ''
+    });
+
+    const handleAddressChange = (data) => {
+        setAddress({
+            city: data.localidade || '',
+            street: data.logradouro || '',
+            neighborhood: data.bairro || ''
+        });
+    };
 
     return (
 
@@ -13,13 +28,17 @@ function FormCadastroImovel() {
                 <label className={styles.label}>O nome do imóvel será exibido na sua tela inicial e na reserva para o hóspede</label>
             </div>
 
-            <div className={styles.input_descricao_container}>
-                <textarea className={styles.input_description} maxLength={250} placeholder="Descrição"></textarea>
-                <p className={styles.max_caracter}>0/250</p>
-            </div>
+            <TextArea />
 
-            <CepInput />
-            <input className={styles.input_cep} type="text" placeholder="Endereço" />
+            <CepInput value={cep} onChange={setCep} onAddressChange={handleAddressChange} />
+
+            <input
+                className={styles.input_cep}
+                value={address.street && address.neighborhood ? `${address.street}, ${address.neighborhood}` : ''}
+                readOnly
+                type="text"
+                placeholder="Endereço"
+            />
 
             <div className={styles.input_number_container} >
                 <input className={styles.input_number} type="number" placeholder="Número" />
@@ -27,7 +46,14 @@ function FormCadastroImovel() {
             </div>
 
             <div className={styles.input_number_container}>
-                <input className={styles.input_city} type="text" placeholder="Cidade" />
+
+                <input
+                    className={styles.input_city}
+                    value={address.city}
+                    type="text"
+                    readOnly
+                    placeholder="Cidade"
+                />
 
                 <select className={styles.input_uf}>
                     <option value="" className={styles.placeholder_uf} disabled selected >UF</option>
@@ -59,11 +85,8 @@ function FormCadastroImovel() {
                     <option value="SE">SE</option>
                     <option value="TO">TO</option>
                 </select>
-
             </div>
         </form>
-
-
     )
 
 }

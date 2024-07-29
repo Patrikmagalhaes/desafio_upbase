@@ -2,6 +2,7 @@
     gap: 16px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20vh;
 }
 
 .input_name_container {
@@ -33,26 +34,7 @@
     line-height: 16px;
 }
 
-.input_description {
-    border: solid 1px #00000029;
-    border-radius: 4px;
-    height: 104px;
-    width: 100%;
-}
 
-.input_description::placeholder {
-    padding: 16px;
-    font-size: 16px;
-    color: #000000CC;
-    font-weight: 400;
-    line-height: 24px;
-    font-family: jura;
-}
-
-.max_caracter {
-    text-align: end;
-    font-size: 12px;
-}
 
 .input_cep {
     height: 56px;

@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/home/index.jsx'
-import CadastroImovel from './pages/cadastroImovel/CadastroImovel.jsx'
+import CadastroImovel from './pages/cadastroImovel'
 import './index.css'
 
 const router = createBrowserRouter([
