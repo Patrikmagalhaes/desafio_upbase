@@ -21,7 +21,6 @@ Para uma melhor experiência, recomendo acessar o site em um dispositivo móvel.
 
 ## 📂 Como Executar Localmente
 
-1. **Clone o Repositório**
    ```bash
   
    git clone https://github.com/Patrikmagalhaes/desafio_upbase.git
