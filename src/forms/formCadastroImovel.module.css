@@ -1,0 +1,117 @@
+.form {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_name_container {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_name {
+    border: solid 1px #00000029;
+    border-radius: 4px;
+    height: 56px;
+
+}
+
+.input_name::placeholder {
+    padding: 16px;
+    font-size: 16px;
+    color: #000000CC;
+    font-weight: 400;
+    height: 24px;
+    line-height: 24px;
+}
+
+.label {
+    color: #10002B;
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 16px;
+}
+
+.input_description {
+    border: solid 1px #00000029;
+    border-radius: 4px;
+    height: 104px;
+    width: 100%;
+}
+
+.input_description::placeholder {
+    padding: 16px;
+    font-size: 16px;
+    color: #000000CC;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: jura;
+}
+
+.max_caracter {
+    text-align: end;
+    font-size: 12px;
+}
+
+.input_cep {
+    height: 56px;
+    width: 100%;
+    border: solid 1px #00000029;
+    border-radius: 4px;
+}
+
+.input_cep::placeholder {
+    padding: 16px;
+    font-size: 16px;
+    color: #000000CC;
+    font-weight: 400;
+    height: 24px;
+    line-height: 24px;
+}
+
+.input_number_container {
+    gap: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.input_number {
+    border: solid 1px #00000029;
+    border-radius: 4px;
+    height: 56px;
+    width: 50%;
+}
+
+.input_number::placeholder,
+.input_city::placeholder {
+    padding: 16px;
+    font-size: 16px;
+    color: #000000CC;
+    font-weight: 400;
+    height: 24px;
+    line-height: 24px;
+}
+
+.input_city {
+    border: solid 1px #00000029;
+    border-radius: 4px;
+    height: 56px;
+    width: 100%;
+}
+
+.input_uf {
+    border: solid 1px #00000029;
+    border-radius: 4px;
+    height: 56px;
+    width: 40%;
+    padding-left: 24px;
+
+}
+
+option {
+    color: #000000CC;
+    line-height: 24px;
+    font-size: 16px;
+
+}

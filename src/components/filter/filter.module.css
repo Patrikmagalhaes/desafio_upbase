@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    gap: 12px;
+}
+
+.purpleButton {
+    background-color: #7B2CBF;
+    border-radius: 8px;
+    border: none;
+    height: 24px;
+    font-family: jura;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 12px 4px 12px;
+    color: #FFFFFF;
+}
+
+.whiteButton {
+    background-color: #FFFFFF;
+    color: #000000CC;
+    border: solid 1px #00000029;
+    border-radius: 8px;
+    height: 24px;
+    font-family: jura;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 12px 4px 12px;
+}

@@ -1,0 +1,53 @@
+.container {
+    background-color: #ffff;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+}
+
+.title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: #10002B;
+}
+
+.containerButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.buttonPurple {
+    background-color: #7B2CBF;
+    padding: 4px 8px 4px 8px;
+    font-size: 12px;
+    font-weight: 600px;
+    color: #ffff;
+    border-radius: 8px;
+    border: none;
+    height: 36px;
+}
+
+.buttonGrey {
+    background-color: #0000005C;
+    padding: 4px 8px 4px 8px;
+    font-size: 12px;
+    font-weight: 600px;
+    color: #ffff;
+    border-radius: 8px;
+    border: none;
+    height: 36px;
+}
+
+.row {
+    background-color: #10002B;
+    width: 16.2%;
+    height: 5px;
+    border-radius: 100px;
+    align-self: center;
+}

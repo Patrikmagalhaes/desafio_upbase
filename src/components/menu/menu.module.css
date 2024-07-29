@@ -1,0 +1,30 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #7B2CBF;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.menuContainer {
+    padding: 16px 24px 16px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    border-radius: 100px;
+    padding: 24px 0px 8px 0px;
+    gap: 10px;
+    background-color: #7B2CBF;
+    display: flex;
+    justify-content: center;
+}
+
+.hr {
+    height: 5px;
+    border-radius: 100px;
+    background-color: #ffff;
+    width: 34%;
+}

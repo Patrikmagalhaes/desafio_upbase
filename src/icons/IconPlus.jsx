@@ -1,0 +1,8 @@
+export default function IconPlus({ ...props }) {
+    return (
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="#7B2CBF
+" xmlns="http://www.w3.org/2000/svg" >
+            <path d="M9.11575 7.584H15.4838V9.856H9.11575V16.448H6.81175V9.856H0.44375V7.584H6.81175V0.959999H9.11575V7.584Z" />
+        </svg>
+    )
+}

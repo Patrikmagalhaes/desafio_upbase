@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'jura';
+  src: url('../public/fonts/Jura/Jura-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+  font-family: jura;
+  background-color: #ffff;
+}
+
+input, option {
+  font-family: jura;
+}
+input, textarea{
+  outline: none;
+}
